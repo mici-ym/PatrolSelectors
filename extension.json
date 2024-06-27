@@ -1,0 +1,23 @@
+{
+    "name": "PatrolSlectors",
+    "version": "0.0.1",
+    "descriptionmsg": "patrolslectors-desc",
+    "manifest_version": 2,
+    "other": "moti",
+    "type": "other",
+    "requires": {
+        "MediaWiki": ">= 1.41.0"
+    },
+    "AutoloadNamespaces": {
+        "MediaWiki\\Extension\\PatrolSlectors\\": "includes/"
+    },
+    "Hooks": {
+        "RecentChange_save": "main"
+    },
+    "HookHandlers": {
+        "main": {
+            "class": "MediaWiki\\Extension\\PatrolSlectors\\main"
+        }
+    }
+
+}
