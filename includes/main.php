@@ -3,7 +3,7 @@
  * @file
  */
 
-namespace MediaWiki\Extension\PatrolSlectors;
+namespace MediaWiki\Extension\PatrolSelectors;
 
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\MediaWikiServices;
@@ -12,8 +12,8 @@ use MediaWiki\MediaWikiServices;
 class main implements RecentChange_saveHook {
 
     public function onRecentChange_save( $recentChange ) {
-        $config = MediaWikiServices::getInstance()->getMainConfig()
-        $nameSpaces= $config->get('PatrolSlectorsNameSpaces');
+        $config = MediaWikiServices::getInstance()->getMainConfig();
+        $nameSpaces = $config->get('PatrolSelectorsNameSpaces');
 
         if (in_array($recentChange->getAttribute('rc_namespace'), $nameSpaces) && $recentChange->getAttribute('rc_patrolled') == 0) {
             $recentChange->setAttribute('rc_patrolled', 2);
