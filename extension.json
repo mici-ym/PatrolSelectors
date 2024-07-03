@@ -16,7 +16,10 @@
     },
     "HookHandlers": {
         "main": {
-            "class": "MediaWiki\\Extension\\PatrolSelectors\\main"
+            "class": "MediaWiki\\Extension\\PatrolSelectors\\main",
+            "services": [
+				"MainConfig",
+            ]
         }
     }
 
