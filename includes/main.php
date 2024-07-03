@@ -19,12 +19,10 @@ class main implements RecentChange_saveHook {
             $recentChange->setAttribute('rc_patrolled', 2);
         }
 
-        /*
         $tags = $config->get('PatrolSelectorsTags');
         if (in_array($recentChange->getAttribute('rc_tag'), $tags) && $recentChange->getAttribute('rc_patrolled') == 0) {
             $recentChange->setAttribute('rc_patrolled', 2);
         }
-        */
         
     }
 }
