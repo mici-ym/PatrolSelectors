@@ -1,22 +1,22 @@
 {
-    "name": "PatrolSlectors",
+    "name": "PatrolSelectors",
     "version": "0.0.1",
-    "descriptionmsg": "patrolslectors-desc",
+    "descriptionmsg": "patrolselectors-desc",
     "manifest_version": 2,
-    "other": "moti",
+    "author": "[https://www.hamichlol.org.il/משתמש:מוטי מוטי]",
     "type": "other",
     "requires": {
-        "MediaWiki": ">= 1.41.0"
+        "MediaWiki": ">= 1.40.0"
     },
     "AutoloadNamespaces": {
-        "MediaWiki\\Extension\\PatrolSlectors\\": "includes/"
+        "MediaWiki\\Extension\\PatrolSelectors\\": "includes/"
     },
     "Hooks": {
         "RecentChange_save": "main"
     },
     "HookHandlers": {
         "main": {
-            "class": "MediaWiki\\Extension\\PatrolSlectors\\main"
+            "class": "MediaWiki\\Extension\\PatrolSelectors\\main"
         }
     }
 
