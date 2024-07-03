@@ -25,11 +25,11 @@
     "config": {
         "PatrolSelectorsNameSpaces": {
             "description": "An array of namespace numbers to be defined as Patrol.",
-            "value": []
+            "value": [2,3,4,5,7,8,9]
         },
         "PatrolSelectorsTags": {
             "description": "An array of tags names to be defined as Patrol.",
-            "value": []
+            "value": ["ייבוא-הפניות"]
         }
     }
 
