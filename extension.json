@@ -21,6 +21,16 @@
 				"MainConfig"
             ]
         }
+    },
+    "config": {
+        "PatrolSelectorsNameSpaces": {
+            "description": "An array of namespace numbers to be defined as Patrol.",
+            "value": []
+        },
+        "PatrolSelectorsTags": {
+            "description": "An array of tags names to be defined as Patrol.",
+            "value": []
+        }
     }
 
 }
