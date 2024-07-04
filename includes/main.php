@@ -16,12 +16,12 @@ class main implements RecentChange_saveHook {
         $nameSpaces = $config->get('PatrolSelectorsNameSpaces');
 
         if (in_array($recentChange->getAttribute('rc_namespace'), $nameSpaces) && $recentChange->getAttribute('rc_patrolled') == 0) {
-            $recentChange->setAttribute('rc_patrolled', 2);
+            $recentChange->reallyMarkPatrolled();
         }
 
-        $tags = $config->get('PatrolSelectorsTags');
-        if (in_array($recentChange->getAttribute('rc_tag'), $tags) && $recentChange->getAttribute('rc_patrolled') == 0) {
-            $recentChange->setAttribute('rc_patrolled', 2);
+        $tage = $config->get('PatrolSelectorsTags');
+        if (in_array($recentChange->getAttribute('rc_tag'), $tage) && $recentChange->getAttribute('rc_patrolled') == 0) {
+            $recentChange->reallyMarkPatrolled();
         }
         
     }

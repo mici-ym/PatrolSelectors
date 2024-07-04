@@ -29,7 +29,7 @@
         },
         "PatrolSelectorsTags": {
             "description": "An array of tags names to be defined as Patrol.",
-            "value": ["ייבוא-הפניות"]
+            "value": "ייבוא-הפניות"
         }
     }
 
